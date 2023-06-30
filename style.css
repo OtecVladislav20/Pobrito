@@ -1,0 +1,492 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --marg50: 50px;
+}
+
+@font-face {
+    font-family: "Obelix Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Obelix\ Pro.ttf") format("woff"),
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} 
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+image {
+    max-width: 100%;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 320px;
+    font-family: "Obelix Pro", sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.txt32black {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.txt20black {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.txt16white {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.txt24white {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.txt24black {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color:#000000;
+}
+
+.txt24green {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color:#00FF1A;
+}
+
+.txt24yellow {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color:#FAFF00;
+}
+
+.txt24orange {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color:#FFB800;
+}
+
+.txt24red {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color:#FF0000;
+}
+
+
+/* header */
+.header-container {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 13px 33px;
+    background: #60CAFE;
+}
+
+.header-logo {
+    margin-right: 13px;
+}
+
+.logo {
+    width: 75px;
+}
+
+.logo__text {
+    width: 221px;
+    height: 55px;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #24FF00;
+}
+
+.txt16black {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    color:#000000;
+}
+
+.link-logo {
+    margin-right: 100px;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* body */
+
+.main {
+    padding: 33px 33px 62px 33px;
+    background: #2D8BB9;
+}
+
+.submit {
+    margin-bottom: 47px;
+    padding: 40px 60px;
+    background: #55A4CB;
+}
+
+.submit__img {
+    margin-right: 46px;
+}
+
+.submit__quote-div {
+    max-width: 922px;
+    min-height: 84px;
+    margin-bottom: 26px;
+    padding: 9px 7px 9px 25px;
+    background: #2D8BB9;
+}
+
+.submit__name {
+    margin: 0 0 17px 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #24FF00;
+}
+
+.submit__info {
+    margin-bottom: 47px;
+}
+
+.submit__list-info {
+    margin: 0;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.submit__list-info:not(:last-child) {
+    margin-right: 19px;
+}
+
+.submit__question {
+    margin-bottom: 17px;
+}
+
+.submit__answer {
+    max-width: 948px;
+    margin-bottom: 47px;
+}
+
+.submit__top-info {
+    margin-bottom: 50px;
+}
+
+.submit__experience-info {
+    margin-right: 57px;
+}
+
+
+
+.memes-container {
+    margin-bottom: 47px;
+}
+
+.memes {
+    padding: 34px 0px 68px 62px;
+    background: #55A4CB;
+}
+
+.memes__img {
+    height: 533px;
+}
+
+.memes__title-block {
+    margin-bottom: 40px;
+}
+
+.memes__block-img {
+    justify-content: center;
+}
+
+
+
+.tth__list-item {
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.tth {
+    padding: 34px 0px 0px 62px;
+    background: #55A4CB;
+}
+
+.tth__img {
+    height: 528px;
+    margin-right: 20px;
+}
+
+.tth__graph {
+    height: 640px;
+}
+
+.tth__double-dought {
+    margin-right: 30px;
+}
+
+.tth__number {
+    margin-right: 13px;
+}
+
+.tth__txt-info {
+    margin-bottom: 22px;
+}
+
+.thh__quote-question {
+    max-width: 270px;
+}
+
+.thh__quote-answer {
+    max-width: 317px;
+}
+
+.tth__title {
+    margin-bottom: 40px;
+}
+
+.tth__img-2 {
+    height: 400px;
+}
+
+
+
+
+.attraction {
+    padding: 250px 100px 100px 100px;
+    margin-bottom: 48px;
+    background: #55A4CB;
+}
+
+.attraction__txt {
+    flex-direction: column;
+    align-items: center;
+}
+
+.attraction__txt-info:not(:last-child) {
+    margin-bottom: 43px;
+}
+
+.attraction__txt-info:last-child {
+    margin-bottom: 650px;
+}
+
+.attraction__img {
+    flex-wrap: wrap;
+}
+
+.attration__img-photo:not(:last-child) {
+    height: 550px;
+}
+.attration__img-photo:last-child {
+    height: 306px;
+}
+.attration__img-photo:not(:nth-child(3n)) {
+    margin-right: 190px;
+}
+.attration__img-photo:not(:nth-child(3n+1)) {
+    margin-bottom: 100px;
+}
+
+
+
+.clother {
+    padding: 43px 43px 30px 43px;
+    margin-bottom: 46px;
+    background: #55A4CB;
+}
+
+.clothers__title {
+    margin-bottom: 32px;
+}
+
+.clother__img {
+    height: 707px;
+}
+
+.clother__info {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.clother__head {
+    height: 197px;
+}
+
+.clother__txt-block {
+    margin-right: 55px;
+}
+
+.clother__txt:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.clother__list-item:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.clother__head-r {
+    margin-right: 40px;
+}
+
+.clother__price {
+    justify-content: center;
+}
+
+.clother__price-title {
+    margin-right: 50px;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #24FF00;
+}
+
+.clother__price-par {
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+.clother__price-par:not(:last-child) {
+    margin-right: 100px;
+}
+
+
+
+
+.opinions {
+    padding: 30px 50px 62px 62px;
+    background: #55A4CB;
+}
+
+.opinions__titles {
+    margin-bottom: 40px;
+}
+
+.opi__txt {
+    width: 100px;
+}
+
+.opi__img {
+    align-items: center;
+    height: 117px;
+}
+
+.opi-opi {
+    align-items: center;
+    width: 704px;
+}
+
+.opi__list-item {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.margin-r-160 {
+    margin-right: 160px;
+}
+
+.opi__line {
+    margin-bottom: 30px;
+}
+
+.opi__list {
+    margin-bottom: 180px;
+}
+
+.opi__rate {
+    justify-content: center;
+}
+
+.opi__rate-txt {
+    margin: 0;
+    margin-right: 80px;
+    font-family: 'ObelixPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 89px;
+    color: #24FF00;
+}
